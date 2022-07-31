@@ -87,6 +87,10 @@ No errors found in this function.
 <img width="373" alt="Screenshot 2022-07-31 at 9 52 48 PM" src="https://user-images.githubusercontent.com/64619851/182037043-2a9d17e0-f30b-4811-9f28-6de41a750744.png">
 No errors found in this function.
 
+## Runnin all the tests
+<img width="426" alt="Screenshot 2022-07-31 at 10 18 00 PM" src="https://user-images.githubusercontent.com/64619851/182037974-ef4f27ed-4df1-4dbb-8184-06ee315be712.png">
+
+
 #### Total tests: 23
 #### Tests passed: 23
 #### Tests failed: 0
