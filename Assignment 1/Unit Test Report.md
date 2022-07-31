@@ -17,7 +17,7 @@ All the work here is done in Python.
 
 ## Logic behind the edge cases
 
-### ``exponent``
+## ``exponent``
 Here I am testing 6 edge cases:
 1. Positive base and positive exponent.
 2. Negative base and negative exponent.
@@ -26,21 +26,21 @@ Here I am testing 6 edge cases:
 5. Positive base and 0 exponent.
 6. Positve base and negative exponent.
 
-### ``multiplication``
+## ``multiplication``
 Multiplication follows commutative law, so the edge cases will not have to be repeated for the same values in different positions. I am testing four edge cases here:
 1. Multiplication between two positive numbers.
 2. Multiplication between two negative numbers.
 3. Multiplication between a positive and a negative number.
 4. Multiplication with 0.
 
-### ``addition``
+## ``addition``
 Addition also follows the commutative law. I am testing four edge cases for ```addition```:
 1. Addition between two positive numbers.
 2. Addition between two negative numbers.
 3. Addition between a negative and a positive number.
 4. Addition to a 0.
 
-### ``subtraction``
+## ``subtraction``
 Subtraction does not follow the commutative law, so it was necessary to test more cases. I tested six edge cases for subtraction.
 1. Subtraction of a positive number from a positive number.
 2. Subtraction of a negative number from a negative number.
@@ -55,3 +55,29 @@ I tested three edge cases for this function:
 2. Square root of a negative number.
 3. Square root of 0.
 
+## Errors found
+## ``exponent``
+<img width="345" alt="Screenshot 2022-07-31 at 9 52 16 PM" src="https://user-images.githubusercontent.com/64619851/182037029-55602cf7-d1e6-49a9-a39c-41e86173ce5b.png">
+No errors found in this function.
+
+## ``multiplication``
+<img width="390" alt="Screenshot 2022-07-31 at 9 52 23 PM" src="https://user-images.githubusercontent.com/64619851/182037030-9490bd83-139c-44cd-aea4-31bbddc6aa1a.png">
+No errors found in this function.
+
+## ``addition``
+<img width="343" alt="Screenshot 2022-07-31 at 9 52 31 PM" src="https://user-images.githubusercontent.com/64619851/182037034-8fe1d4d9-3a5d-476e-86d7-7b6857b95c94.png">
+No errors found in this function.
+
+## ``subtraction``
+<img width="361" alt="Screenshot 2022-07-31 at 9 52 41 PM" src="https://user-images.githubusercontent.com/64619851/182037039-c099e8eb-124e-4bca-a298-cb3d4abaac87.png">
+No errors found in this function.
+
+## ``squareRoot``
+<img width="373" alt="Screenshot 2022-07-31 at 9 52 48 PM" src="https://user-images.githubusercontent.com/64619851/182037043-2a9d17e0-f30b-4811-9f28-6de41a750744.png">
+No errors found in this function.
+
+#### Total tests: 23
+#### Tests passed: 23
+#### Tests failed: 0
+#### Success rate: 100%
+#### Failure rate: 0%
