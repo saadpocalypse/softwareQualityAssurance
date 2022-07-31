@@ -129,7 +129,7 @@ def squareRootSuite():
 def main():
     while True:
         inputOne = int(input("What unit test do you want to run?\n1) Exponent\n2) Multiplication\n"
-        "3) Addition\n4) Subtraction\n5) Square Root\n6) None\n"))
+        "3) Addition\n4) Subtraction\n5) Square Root\n6) All\n7) None\n"))
 
         if inputOne == 1:
             suiteToTest = exponentSuite()
@@ -152,6 +152,11 @@ def main():
             unittest.TextTestRunner(verbosity = 2).run(suiteToTest)
 
         if inputOne == 6:
+            suiteToTest = unittest.TestSuite([exponentSuite(), multiplicationSuite(), additionSuite(), subtractionSuite(), 
+            squareRootSuite()])
+            unittest.TextTestRunner(verbosity = 2).run(suiteToTest)
+
+        if inputOne == 7:
             print("\nPROGRAM TERMINATED\n")
             break
         
