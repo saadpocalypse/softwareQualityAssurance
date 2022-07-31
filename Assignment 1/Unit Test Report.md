@@ -83,4 +83,4 @@ No errors found in this function.
 #### Failure rate: 0%
 
 ## Softwares used
-You simple write ``unittest`` to import the (PyUnit)[http://pyunit.sourceforge.net/pyunit.html] module for unit testing in Python. No specific softwares, IDEs or text-editors are required.
+You simple write ``import unittest`` to import the (PyUnit)[http://pyunit.sourceforge.net/pyunit.html] module for unit testing in Python. No specific softwares, IDEs or text-editors are required.
