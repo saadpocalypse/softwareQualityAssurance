@@ -1,4 +1,3 @@
-from audioop import add
 from functionsToTest import exponent, multiplication, addition, subtraction, squareRoot
 import unittest
 
@@ -12,6 +11,15 @@ class exponentUnitTest(unittest.TestCase):
 
     def testThree(self):
         assert exponent(-2, 3) ==  -8, "Can't take exponent of a negative number"
+        
+    def testFour(self):
+        assert exponent(0, 3) ==  0, "Can't take exponent of a 0"
+
+    def testFive(self):
+        assert exponent(3, 0) ==  1, "Can't take 0 as an exponent"
+
+    def testSix(self):
+        assert exponent(2, -3) == 0.125, "Can't take a negative number as an exponent for a positive number"
 
 
 class multiplicationUnitTest(unittest.TestCase):
@@ -24,6 +32,9 @@ class multiplicationUnitTest(unittest.TestCase):
     def testThree(self):
             assert multiplication(-4, 5) == -20, "Can't multiply positive and negative numbers"
 
+    def testFour(self):
+            assert multiplication(0, 8) == 0, "Can't multiply with a 0"
+
 
 class additionUnitTest(unittest.TestCase):
     def testOne(self):
@@ -34,6 +45,9 @@ class additionUnitTest(unittest.TestCase):
 
     def testThree(self):
             assert addition(-4, 5) == 1, "Can't add negative and positive numbers"
+    
+    def testFour(self):
+            assert addition(0, 8) == 8, "Can't add to 0"
 
 
 class subtractionUnitTest(unittest.TestCase):
@@ -44,7 +58,16 @@ class subtractionUnitTest(unittest.TestCase):
             assert subtraction(-3, -4) == 1, "Can't subtract negative numbers"
 
     def testThree(self):
-            assert subtraction(-5, 6) == -11, "Can't subtract positive and negative numbers"
+            assert subtraction(-5, 6) == -11, "Can't subtract positive from a negative number"
+
+    def testFour(self):
+            assert subtraction(5, -6) == 11, "Can't subtract negative number from a positive number"
+
+    def testFive(self):
+            assert subtraction(0, 6) == -6, "Can't subtract any number from 0"
+
+    def testSix(self):
+            assert subtraction(6, 0) == 6, "Can't subtract 0 from anything"
 
 
 class squareRootUnitTest(unittest.TestCase):
@@ -64,6 +87,9 @@ def exponentSuite():
         suite.addTest(exponentUnitTest('testOne'))
         suite.addTest(exponentUnitTest('testTwo'))
         suite.addTest(exponentUnitTest('testThree'))
+        suite.addTest(exponentUnitTest('testFour'))
+        suite.addTest(exponentUnitTest('testFive'))
+        suite.addTest(exponentUnitTest('testSix'))
         return suite
 
 def multiplicationSuite():
@@ -71,6 +97,7 @@ def multiplicationSuite():
         suite.addTest(multiplicationUnitTest('testOne'))
         suite.addTest(multiplicationUnitTest('testTwo'))
         suite.addTest(multiplicationUnitTest('testThree'))
+        suite.addTest(multiplicationUnitTest('testFour'))
         return suite
 
 def additionSuite():
@@ -78,6 +105,7 @@ def additionSuite():
         suite.addTest(additionUnitTest('testOne'))
         suite.addTest(additionUnitTest('testTwo'))
         suite.addTest(additionUnitTest('testThree'))
+        suite.addTest(additionUnitTest('testFour'))
         return suite
 
 def subtractionSuite():
@@ -85,6 +113,9 @@ def subtractionSuite():
         suite.addTest(subtractionUnitTest('testOne'))
         suite.addTest(subtractionUnitTest('testTwo'))
         suite.addTest(subtractionUnitTest('testThree'))
+        suite.addTest(subtractionUnitTest('testFour'))
+        suite.addTest(subtractionUnitTest('testFive'))
+        suite.addTest(subtractionUnitTest('testSix'))
         return suite
 
 def squareRootSuite():
