@@ -9,6 +9,7 @@
 
 * One Selenium is installed, we need to download the WebDriver for Chrome from [here.](https://chromedriver.chromium.org/downloads)
 * Put the ChromeDriver in the same folder as your Python file running that would run the test. All the requirements have now been met.
+* On MacOS, running ChromeDriver for the first time requires allowing its operations to be executed through Security & Privacy settings in System Preferences.
 
 <br>
 
