@@ -28,6 +28,8 @@ class SeleniumTest(unittest.TestCase):
         # Here, we access the first heading on the search page and get its child-links
         topResults = driver.find_elements(By.XPATH, ".//*[@id='rso']//div//h3/a")
         assert topResults != None, "Page not rendered fully"
+        for childLink in topResults:
+            print(childLink.get_attribute("href"))
 
     def testApi(self):
         driver = self.driver
