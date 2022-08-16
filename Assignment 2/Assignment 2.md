@@ -40,6 +40,6 @@ The test I wrote works in 4 essential steps.
 | ``sleep``    | We stall the program appropriately to ensure proper execution of tasks. |
 | ``getcwd``    | We get the current working directory for ChromeDriver. |
 | ``find_element``    | We access the search bar on Google's homepage and the links after the search is performed. |
-| ``send_keys``    | We pass a query to the searhbox, in our case it is "Apple". |
+| ``send_keys``    | We pass a query to the searchbox, in our case it is "Apple". |
 | ``submit``    | We submit the query and perform the search. |
 | ``close``    | We close the ChromeDriver instance. |
