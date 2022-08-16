@@ -2,12 +2,12 @@
 
 # Requirements
 * First and foremost, you need Selenium.
-* Download pip from [here](https://pip.pypa.io/en/stable/installation/).
+* Download pip from [here.](https://pip.pypa.io/en/stable/installation/)
 * In Terminal, write the following command:
 
   ``` pip install Selenium```
 
-* One Selenium is installed, we need to download the WebDriver for Chrome from [here](https://chromedriver.chromium.org/downloads).
+* One Selenium is installed, we need to download the WebDriver for Chrome from [here.](https://chromedriver.chromium.org/downloads)
 * Put the ChromeDriver in the same folder as your Python file running that would run the test. All the requirements have now been met.
 
 <br>
